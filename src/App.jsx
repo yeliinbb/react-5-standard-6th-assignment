@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useMemo } from "react";
 import List from "./components/List";
 
-// TODO: 콘솔창을 확인해보고 input 타이핑할 때 마다
+// TODO: 콘솔창을 확인해보고 input 타이핑할 때마다
 //       List 컴포넌트가 불필요하게 리렌더링되지 않게 memo 사용해서 해결해 보세요.
 
 const App = () => {
