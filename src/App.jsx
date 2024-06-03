@@ -4,7 +4,10 @@ import useFetch from "./hooks/useFetch";
 // TODO: useFetch 라는 커스텀훅을 사용해서 리팩터링 해보세요
 
 const App = () => {
-  const { loading, error, title } = useFetch();
+  // 매개변수를 사용해서 재사용성 높이기 -> url 부분
+  const { loading, error, title } = useFetch(
+    "https://jsonplaceholder.typicode.com/todos/1"
+  );
 
   if (loading) return <h1>Loading...</h1>;
   if (error) return <h1>Error: {error.message}</h1>;
